@@ -284,7 +284,7 @@ class ExampleGenerator(object):
         fig = plt.gcf()
         fig.canvas.draw()
         pngfile = op.join(self.target_dir, self.pngfilename)
-        thumbfile = op.join("example_thumbs", self.thumbfilename)
+        thumbfile = op.join("doc", "example_thumbs", self.thumbfilename)
         self.html = "<img src=../%s>" % self.pngfilename
         fig.savefig(pngfile, dpi=75, bbox_inches="tight")
 
